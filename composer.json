@@ -1,0 +1,39 @@
+{
+    "name": "mindforce/cakephp-editorial-markitup",
+    "description": "Editorial Markitup plugin for CakePHP",
+    "homepage": "http://mindforce.me",
+  	"keywords": ["cakephp", "ui", "editor", "Markitup"],
+  	"type": "cakephp-plugin",
+  	"license": "MIT",
+    "authors": [
+  		{
+  			"name": "Mike Talimonchuk",
+  			"homepage": "https://mindforce.me"
+  		}
+  	],
+  	"support": {
+  		"issues": "https://github.com/mindforce/cakephp-editorial-markitup/issues",
+  		"source": "https://github.com/mindforce/cakephp-editorial-markitup"
+  	},
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "cakephp/plugin-installer": "*",
+        "cakephp/cakephp": "3.0.x-dev",
+        "mindforce/cakephp-editorial": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Editorial\\Markitup\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Editorial\\Markitup\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
